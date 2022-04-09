@@ -57,7 +57,7 @@ struct SnapCarousel<Content: View, T: Identifiable>: View {
                 DragGesture()
                     .updating($offset, body: { value, out, _ in
 
-                        // Maiing it little bit slower
+                        // Making it little bit slower
                         out = (value.translation.width / 1.5)
                     })
                     .onEnded({ value in
